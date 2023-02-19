@@ -1,0 +1,109 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Paused",
+				"type": "event"
+			},
+			{
+				"anonymous": false,
+				"inputs": [
+					{
+						"indexed": false,
+						"internalType": "address",
+						"name": "account",
+						"type": "address"
+					}
+				],
+				"name": "Unpaused",
+				"type": "event"
+			},
+			{
+				"inputs": [],
+				"name": "paused",
+				"outputs": [
+					{
+						"internalType": "bool",
+						"name": "",
+						"type": "bool"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"details": "Contract module which allows children to implement an emergency stop mechanism that can be triggered by an authorized account. This module is used through inheritance. It will make available the modifiers `whenNotPaused` and `whenPaused`, which can be applied to the functions of your contract. Note that they will not be pausable by simply including this module, only once the modifiers are put in place.",
+			"events": {
+				"Paused(address)": {
+					"details": "Emitted when the pause is triggered by `account`."
+				},
+				"Unpaused(address)": {
+					"details": "Emitted when the pause is lifted by `account`."
+				}
+			},
+			"kind": "dev",
+			"methods": {
+				"constructor": {
+					"details": "Initializes the contract in unpaused state."
+				},
+				"paused()": {
+					"details": "Returns true if the contract is paused, and false otherwise."
+				}
+			},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"security/Pausable.sol": "Pausable"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"security/Pausable.sol": {
+			"keccak256": "0x0040bef7a18b93312613bc16b57fc4b318d6120323da2140b3a5ea0dd7124df0",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://da940c8faba917de1b6bd3323cc176b55f1898a2305907b5fc26a7a6cef533b2",
+				"dweb:/ipfs/QmSS9nCpsYPRMpfkhw5Uh2GGNYRNzLxHJ2Tizhqdvzfbon"
+			]
+		},
+		"utils/Context.sol": {
+			"keccak256": "0x66f478e0f1dfe63c31a1763195a1177501c37e481e5b53c11613cfa0f7919b1a",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://aa5eec083778a8590929601aaa59c62c52bc437efe50ac372bb04d17f5569557",
+				"dweb:/ipfs/QmRWFnkrkqD9NkKutUVBtSQzoPNonfMstYR8YAhsZ1Xswv"
+			]
+		}
+	},
+	"version": 1
+}

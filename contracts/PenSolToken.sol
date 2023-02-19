@@ -111,14 +111,14 @@ contract PenSolToken is ERC20Capped, ERC20Burnable, ERC20Pausable, Ownable {
 
     constructor(string memory name, string memory symbol)
         ERC20(name, symbol)
-        ERC20Capped(10000000000 * (10 ** uint256(decimals())))
+        ERC20Capped(1000000000 * (10 ** uint256(decimals())))
         Ownable() {}
 
     function mint(address account, uint256 amount) public onlyOwner {
         _mint(account, amount);
     }
 
-    function mintWithoutDecimals(address account, uint256 amount) public onlyOwner {
+    function mintNoDcmls(address account, uint256 amount) public onlyOwner {
         _mint(account, amount * (10 ** uint256(decimals())));
     }
 

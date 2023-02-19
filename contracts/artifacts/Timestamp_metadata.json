@@ -1,0 +1,66 @@
+{
+	"compiler": {
+		"version": "0.8.7+commit.e28d00a7"
+	},
+	"language": "Solidity",
+	"output": {
+		"abi": [
+			{
+				"inputs": [],
+				"name": "saveTimestamp",
+				"outputs": [],
+				"stateMutability": "nonpayable",
+				"type": "function"
+			},
+			{
+				"inputs": [],
+				"name": "timestamp",
+				"outputs": [
+					{
+						"internalType": "uint256",
+						"name": "",
+						"type": "uint256"
+					}
+				],
+				"stateMutability": "view",
+				"type": "function"
+			}
+		],
+		"devdoc": {
+			"kind": "dev",
+			"methods": {},
+			"version": 1
+		},
+		"userdoc": {
+			"kind": "user",
+			"methods": {},
+			"version": 1
+		}
+	},
+	"settings": {
+		"compilationTarget": {
+			"contracts/Timestamp.sol": "Timestamp"
+		},
+		"evmVersion": "london",
+		"libraries": {},
+		"metadata": {
+			"bytecodeHash": "ipfs"
+		},
+		"optimizer": {
+			"enabled": false,
+			"runs": 200
+		},
+		"remappings": []
+	},
+	"sources": {
+		"contracts/Timestamp.sol": {
+			"keccak256": "0x00c1dcda2157cde2eb15d80ea135f8d3ca400365bd841e07859162e2c348ab0d",
+			"license": "MIT",
+			"urls": [
+				"bzz-raw://106574b11e5abf1b53b31926a1e4330c5e10d352c83ef1d81b70824fb1c83dea",
+				"dweb:/ipfs/QmNW5ELU25UZRhkMWzp85BxJkxP9mFSJ3SUuDXeV4QsZ6d"
+			]
+		}
+	},
+	"version": 1
+}
